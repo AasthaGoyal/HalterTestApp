@@ -10,10 +10,8 @@ Each cow's record has several fields including:
 
  1. Run: The folder is names as "herd" under src/main/java, you can directly right click on 'Run' and select 'Run Herd application'. On doing so, the application would run on http://localhost:8080. 
  
- ```
- Note: Running on http://localhost:8080 will not display anything, you have to go to /cows/ to process further as followed by in Step 2
- ```
-
+   Note: Running on http://localhost:8080 will not display anything, you have to go to /cows/ to process further as followed by in Step 2
+ 
  2. Get all Records: To see all the existing cow records, go to http://localhost:8080/cows. Along with all the other details, a record shows the links to its "self" and the link of the record in the "list". It should display the record in the format:
  
 ```
