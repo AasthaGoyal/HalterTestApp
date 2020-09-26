@@ -13,12 +13,12 @@ import javax.persistence.Id;
 
     private @Id @GeneratedValue Long id;
     private Integer cowNumber;
-    private Long collarId;
+    private String collarId;
     private String status;
 
     Cow() {}
 
-    Cow(Integer cowNumber, Long collarId, String status) {
+    Cow(Integer cowNumber, String collarId, String status) {
         this.cowNumber = cowNumber;
         this.collarId = collarId;
         this.status = status;

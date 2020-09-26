@@ -13,8 +13,8 @@ class LoadDatabase {
     @Bean
     CommandLineRunner initDatabase(CowRepository repository) {
         return args -> {
-            log.info("Preloading " + repository.save(new Cow(123,  (long) 44321, "Active")));
-            log.info("Preloading " + repository.save(new Cow(456,(long) 54232,"Broken")));
+            log.info("Preloading " + repository.save(new Cow(123,   "123-3455-56778", "Active")));
+            log.info("Preloading " + repository.save(new Cow(456, "324-3212-45678","Broken")));
         };
     }
 }
