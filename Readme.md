@@ -30,15 +30,15 @@ Each cow's record has several fields including:
  }
  },`
  
- 3. Create a new record: For instance to insert a new record with details as {cowNumber: 123, collarId: 12353221, status: Active}, the command for the terminal would be:
+ 3. Create a new record: For instance to insert a new record with details as {cowNumber: 123, collarId: 123-5322-54341", status: Active}, the command for the terminal would be:
 
-`curl -X POST localhost:8080/cows -H 'Content-Type:application/json' -d '{"cowNumber":"830", "collarId":"12353221", "status":"active"}' `
+`curl -X POST localhost:8080/cows -H 'Content-Type:application/json' -d '{"cowNumber":"830", "collarId":"123-5322-54341"", "status":"active"}' `
  
  You would be able to see the new record has been inserted when you refresh the page at http://localhost:8080/cows
 
  4. Update an existing record: For instance to change the status of the last record that we added from 'active' to 'broken', the terminal command would be:
 
 `
-curl -X PUT localhost:8080/cows/3 -H 'Content-Type:application/json' -d '{"cowNumber":"830", "collarId":"12353221","status":"broken"}'`
+curl -X PUT localhost:8080/cows/3 -H 'Content-Type:application/json' -d '{"cowNumber":"830", "collarId":"123-5322-54341","status":"broken"}'`
 
 Refresh the page at http://localhost:8080/cows again to see the updated changes.
