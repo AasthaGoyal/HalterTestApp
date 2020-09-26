@@ -40,3 +40,5 @@ Each cow's record has several fields including:
 
 `
 curl -X PUT localhost:8080/cows/3 -H 'Content-Type:application/json' -d '{"cowNumber":"830", "collarId":"12353221","status":"broken"}'`
+
+Refresh the page at http://localhost:8080/cows again to see the updated changes.
